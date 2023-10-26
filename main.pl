@@ -1,7 +1,10 @@
 % Definições de registradores
 reg(a0, 0).
 reg(a1, 0).
-% Adicione mais definições de registradores conforme necessário
+reg(a2, 0).
+reg(a3, 0).
+reg(a4, 0).
+reg(a5, 0).
 
 % Implementação da instrução addi (adição imediata)
 instrucao(addi, Dest, Src, Immediate) :-
@@ -23,7 +26,7 @@ instrucao(jump, Destino) :-
     retract(program_counter(_)),  % Atualiza o contador de programa
     assert(program_counter(Destino)).
 
-% Implementação de outras instruções...
+% Faltam mais algumas das básicas
 
 % Função principal
 main :-
